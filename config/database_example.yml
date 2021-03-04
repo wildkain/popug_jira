@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: popug_jira_development
+
+test:
+  <<: *default
+  database: popug_jira_test
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
