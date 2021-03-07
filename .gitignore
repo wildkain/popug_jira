@@ -31,5 +31,5 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
-.idea/
-database.yml
+.idea/*
+/config/database.yml

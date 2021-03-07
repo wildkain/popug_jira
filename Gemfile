@@ -13,6 +13,7 @@ gem 'rails', '~> 6.1.3'
 gem 'sass-rails', '>= 6'
 gem 'sequel-rails'
 gem 'turbolinks', '~> 5'
+gem 'umbrellio-sequel-plugins'
 gem 'webpacker', '~> 5.0'
 
 group :development, :test do

@@ -198,6 +198,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    symbiont-ruby (0.6.0)
     thor (1.1.0)
     tilt (2.0.10)
     turbolinks (5.2.1)
@@ -205,6 +206,9 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    umbrellio-sequel-plugins (0.4.0.164)
+      sequel
+      symbiont-ruby (>= 0.6)
     unicode-display_width (2.0.0)
     web-console (4.1.0)
       actionview (>= 6.0.0)
@@ -240,6 +244,7 @@ DEPENDENCIES
   spring
   turbolinks (~> 5)
   tzinfo-data
+  umbrellio-sequel-plugins
   web-console (>= 4.1.0)
   webpacker (~> 5.0)
 

@@ -26,6 +26,16 @@ module PopugJira
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
+    # define DB constant
+    config.sequel.after_connect = proc do
+      ::DB ||= Sequel::Model.db
+      ::DB.extension :synchronize
+
+      Sequel::Model.plugin :active_model
+      Sequel::Model.plugin :synchronize
+      Sequel::Model.plugin :timestamps, update_on_create: true
+    end
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
